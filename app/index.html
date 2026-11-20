@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">LL</div>
+      <div>
+        <h1>LEONIDA <span class="neon">LEGEND</span></h1>
+        <p class="tagline">GTA VI Trophy Guide &amp; Tracker — all 55 PS5 trophies, one platinum roadmap</p>
+      </div>
+    </div>
+    <div class="progress-card" aria-label="Overall progress">
+      <div class="progress-top">
+        <span id="progress-count">0 / 55</span>
+        <span id="progress-pct">0%</span>
+      </div>
+      <div class="bar bar-big"><div id="progress-fill"></div></div>
+      <div class="grade-bars" id="grade-bars"></div>
+    </div>
+  </div>
+</header>
+
+<nav class="controls" aria-label="Guide controls">
+  <div class="controls-inner">
+    <div class="view-tabs" role="tablist">
+      <button id="tab-list" class="tab active" type="button">Checklist</button>
+      <button id="tab-roadmap" class="tab" type="button">Platinum Roadmap</button>
+    </div>
+    <label class="search-box">
+      <span class="search-label">Search</span>
+      <input id="search" type="search" placeholder="trophy, mission, place…" autocomplete="off">
+    </label>
+    <label class="toggle">
+      <input id="spoiler-toggle" type="checkbox">
+      <span>Spoiler shield (hide unearned hidden trophies)</span>
+    </label>
+    <div class="io-buttons">
+      <button id="export-btn" type="button">Export progress</button>
+      <label class="import-label">Import<input id="import-file" type="file" accept="application/json" hidden></label>
+      <button id="reset-btn" type="button">Reset</button>
+    </div>
+  </div>
+  <div class="controls-inner chips-row">
+    <div class="chip-group" id="kind-chips" aria-label="Filter by type"></div>
+    <div class="chip-group" id="grade-chips" aria-label="Filter by grade"></div>
+    <span id="result-count" class="result-count"></span>
+  </div>
+</nav>
+
+<main class="layout">
+  <section id="list-view" class="list-view" aria-label="Trophy checklist">
+    <div id="trophy-list" class="trophy-list"></div>
+    <p id="empty-state" class="empty-state" hidden></p>
+  </section>
+
+  <section id="roadmap-view" class="roadmap-view" aria-label="Platinum roadmap" hidden>
+    <div class="roadmap-intro">
+      <h2>The road to Vice Got a Price!</h2>
+      <p>Six stages, in the order experienced platinum hunters work them: story first, cleanup after, 100% last.
+      Anything flagged <span class="flag flag-missable">CAN BE MISSED</span> gets a call-out in its stage — deal with those while you are there.
+      One rule above all: <strong>cheats off</strong> — guide sites report that cheats disable trophies and saving.</p>
+    </div>
+    <div id="roadmap-stages"></div>
+  </section>
+
+  <aside id="detail-panel" class="detail-panel" aria-label="Trophy detail" hidden>
+    <button id="detail-close" class="detail-close" type="button" aria-label="Close detail">×</button>
+    <div id="detail-body"></div>
+  </aside>
+</main>
+
+<footer class="colophon">
+  <p><strong>About this guide.</strong> Trophy names, descriptions, grades and hidden flags are the official
+  PlayStation 5 list for Grand Theft Auto VI as published on 2026-11-18. Guide text, categorisation, roadmap
+  order and missable flags are original to this guide; where a specific claim comes from somewhere else, the
+  trophy's own source line says so.</p>
+  <p id="sources-line"></p>
+  <p class="fineprint">Unofficial fan guide. Not affiliated with Rockstar Games or Take-Two Interactive. No game artwork is used.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
